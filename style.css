@@ -1,0 +1,96 @@
+body {
+    background: #d6e4fc repeat;
+    width: auto;
+    display: flex;
+}
+
+@font-face {
+    font-family: 'MyWebFont';
+    src: url('police/Action_Man-webfont.eot');
+    src: url('police/Action_Man-webfont.eot?iefix') format('eot'), url('police/Action_Man-webfont.woff') format('woff'), url('police/Action_Man-webfont.ttf') format('truetype'), url('police/Action_Man-webfont.ttf.svg#webfont') format('svg');
+}
+
+#bande {
+    width: 15%;
+    background: #d1d1d1;
+    border-radius: 4px;
+    box-shadow: 6px 6px 0 #b9c0cc;
+    margin-right: 10px;
+    text-align: center;
+}
+
+#full_page {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex: 2;
+}
+
+header {
+    font-family: 'MyWebFont', Arial, sans-serif;
+    font-size: 1.8em;
+    display: flex;
+    justify-content: center;
+    background: url(images/separateur.png) repeat-x bottom;
+}
+
+section {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    font-size: 1.2em;
+    margin-top: 25px;
+}
+
+#experience {
+    width: 33%;
+}
+
+#competences {
+    width: 33%;
+}
+
+#formation {
+    width: 33%;
+}
+
+h2 {
+    color: #776a6a;
+}
+
+h1,
+p {
+    text-align: center;
+}
+
+img {
+    border: 1px black solid;
+    box-shadow: 2px 2px 2px black;
+}
+
+ul {
+    list-style-image: url(images/ico_liensexterne.png);
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+@media all and (max-width: 1024px) {
+    #bande {
+        display: none;
+    }
+    section {
+        flex-direction: column;
+        text-align: center;
+    }
+    #experience {
+        width: auto;
+    }
+    #competences {
+        width: auto;
+    }
+    #formation {
+        width: auto;
+    }
+}
